@@ -175,13 +175,44 @@ namespace QuizGame
             }
         }
 
-        // Get number of questions in the database
+        public string GetSqlStr(List<string> categoryList)
+        {
+            List<string> categories = categoryList;
+            string culture = "Culture";
+            string sport = "Sport";
+            string entertainment = "Entertainment";
+            string geography = "Geography";
+            string history = "History";
+            string technology = "Technology";
+            string nature = "Nature";
+            string sqlStr = "SELECT COUNT(*) FROM Question WHERE qCategory = ";
+            //int count = 0;
+            for (int i = 0; i < categories.Count; i++){
+                
+                if (categories[i] == culture){
+                    sqlStr += "'Culture'";
+                    //count++;
+                    Console.WriteLine(i);
+                }
+                if (categories[i] == sport)
+                {
+                    sqlStr += "OR qCategory = 'Sport'";
+                    //count++;
+                }
+               
+            }
+            return sqlStr;
+        }
+
+        //public int GetNrOfQuestions(List<string> categoryList)
         public int GetNrOfQuestions()
         {
             try
             {
                 con.Open();
 
+                //sqlStr = GetSqlStr(categoryList);
+                // den här under funkar, jag testar bara //Axel
                 sqlStr = "SELECT COUNT(*) FROM Question";
                 cmd = new SqlCommand(sqlStr, con);
                 reader = cmd.ExecuteReader();
@@ -201,6 +232,7 @@ namespace QuizGame
         }
 
         // Gets a random number
+        //public int GetRandomNumber(List<string> categoryList)            AXELS BAJS MED KATEGORIER
         public int GetRandomNumber()
         {
             try
@@ -216,7 +248,7 @@ namespace QuizGame
             }
         }
 
-        //public string sqlStr()
+        
 
         // Creates a List with questionnumbers.
         public List<int> CheckUnique(int gId)

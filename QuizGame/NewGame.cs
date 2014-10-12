@@ -49,18 +49,19 @@ namespace QuizGame
         {            
             try
             {
-                string culture = cb_Culture.Text;
-                string sport = cb_Sport.Text;
-                string entertainment = cb_Entertainment.Text;
-                string geography = cb_Geography.Text;
-                string history = cb_History.Text;
-                string technology = cb_Technology.Text;
-                string nature = cb_Nature.Text;
-                List<string> categoryList = util.createCategoryList(culture,sport,entertainment,geography,technology,nature,history);
+                //string culture = cb_Culture.Text;
+                //string sport = cb_Sport.Text;
+                //string entertainment = cb_Entertainment.Text;
+                //string geography = cb_Geography.Text;
+                //string history = cb_History.Text;
+                //string technology = cb_Technology.Text;
+                //string nature = cb_Nature.Text;
+                //List<string> categoryList = util.CreateCategoryList(culture,sport,entertainment,geography,technology,nature,history);
 
                 int questions = cb_nrOfQuestions.SelectedIndex;                            
                 string username = cb_username.Text;
                 util.NewGame(questions, username);
+                //util.NewGame(questions, username, categoryList);   Axels shiet
                 QuestionFrame qf = new QuestionFrame();
                 Hide();
                 qf.ShowDialog();

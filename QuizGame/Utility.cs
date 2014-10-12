@@ -23,6 +23,7 @@ namespace QuizGame
         }
 
         // Create a new game, further instructions below.
+        //public void NewGame(int questions, string username, List<string> categoryList)
         public void NewGame(int questions, string username)
         {
             // Create new game with new gId
@@ -36,6 +37,7 @@ namespace QuizGame
             int qNr = 0;
             for (int i = 0; i <= questions; i++)
             {
+                //qNr = controller.GetRandomNumber(categoryList);
                 qNr = controller.GetRandomNumber();
                 if (!rndList.Contains(qNr))
                 {
@@ -278,43 +280,40 @@ namespace QuizGame
             return endgameText;
         }
 
-        public List<string> createCategoryList(string culture, string sport, string entertainment, string geography, string technology, string nature,string history)
-        {
-            List<string> categoryList = new List<string>();
-            if (culture != null)
-            {
-                categoryList.Add(culture);
-                if (sport != null)
-                {
-                    categoryList.Add(sport);
-                    if (entertainment != null)
-                    {
-                        categoryList.Add(entertainment);
-                        if (geography != null)
-                        {
-                            categoryList.Add(geography);
-                            if (technology != null)
-                            {
-                                categoryList.Add(technology);
-                                if (technology != null)
-                                {
-                                    categoryList.Add(technology);
-                                    if (nature != null)
-                                    {
-                                        categoryList.Add(nature);
-                                        if (history != null)
-                                        {
-                                            categoryList.Add(history);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            return categoryList;
-        }
+        //public List<string> CreateCategoryList(string culture, string sport, string entertainment, string geography, string technology, string nature,string history)
+        //{
+        //    List<string> categoryList = new List<string>();
+        //    if (culture != null)
+        //    {
+        //        categoryList.Add(culture);
+        //        if (sport != null)
+        //        {
+        //            categoryList.Add(sport);
+        //            if (entertainment != null)
+        //            {
+        //                categoryList.Add(entertainment);
+        //                if (geography != null)
+        //                {
+        //                    categoryList.Add(geography);
+        //                    if (technology != null)
+        //                    {
+        //                        categoryList.Add(technology);
+        //                        if (technology != null)
+        //                        {
+        //                            categoryList.Add(nature);
+        //                            if (history != null)
+        //                            {
+        //                                categoryList.Add(history);
+        //                            }
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //    }   
+            
+        //    return categoryList;
+        //}
     }
 
 }

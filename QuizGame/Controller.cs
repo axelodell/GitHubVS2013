@@ -47,6 +47,7 @@ namespace QuizGame
         //    return dal.GetNrOfQuestions();
         //}
 
+        //public int GetRandomNumber(List<string> categoryList)
         public int GetRandomNumber()
         {
             return dal.GetRandomNumber();
