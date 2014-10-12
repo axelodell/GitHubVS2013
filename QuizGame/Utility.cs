@@ -78,6 +78,10 @@ namespace QuizGame
             return gId;
         }
 
+        public int test()
+        {
+            return 5;
+        }
         // Return questionnumber.
         public int GetQnr()
         {
