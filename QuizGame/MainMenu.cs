@@ -34,5 +34,13 @@ namespace QuizGame
             this.Close();
         }
 
+        private void btn_createQuestion_Click(object sender, EventArgs e)
+        {
+            CreateQuestion cq = new CreateQuestion();
+            this.Hide();
+            cq.ShowDialog();
+            this.Close();
+        }
+
     }
 }

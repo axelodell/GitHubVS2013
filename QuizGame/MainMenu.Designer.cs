@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_createQuestion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             // btn_NewGame
             // 
             this.btn_NewGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_NewGame.Location = new System.Drawing.Point(25, 218);
+            this.btn_NewGame.Location = new System.Drawing.Point(25, 191);
             this.btn_NewGame.Name = "btn_NewGame";
             this.btn_NewGame.Size = new System.Drawing.Size(317, 47);
             this.btn_NewGame.TabIndex = 1;
@@ -64,7 +65,7 @@
             // btn_Leaderboard
             // 
             this.btn_Leaderboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Leaderboard.Location = new System.Drawing.Point(25, 281);
+            this.btn_Leaderboard.Location = new System.Drawing.Point(25, 297);
             this.btn_Leaderboard.Name = "btn_Leaderboard";
             this.btn_Leaderboard.Size = new System.Drawing.Size(317, 47);
             this.btn_Leaderboard.TabIndex = 2;
@@ -114,10 +115,22 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // btn_createQuestion
+            // 
+            this.btn_createQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_createQuestion.Location = new System.Drawing.Point(25, 244);
+            this.btn_createQuestion.Name = "btn_createQuestion";
+            this.btn_createQuestion.Size = new System.Drawing.Size(317, 47);
+            this.btn_createQuestion.TabIndex = 7;
+            this.btn_createQuestion.Text = "Create Question";
+            this.btn_createQuestion.UseVisualStyleBackColor = true;
+            this.btn_createQuestion.Click += new System.EventHandler(this.btn_createQuestion_Click);
+            // 
             // MainMenu
             // 
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(725, 425);
+            this.Controls.Add(this.btn_createQuestion);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -144,6 +157,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_createQuestion;
     }
 }
 

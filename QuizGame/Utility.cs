@@ -272,6 +272,26 @@ namespace QuizGame
             }
         }
 
+        //Create a new question.
+        public string CreateQuestion(string qDescription, string corrAns, string incAlt1, string incAlt2, string incAlt3)
+        {
+            string returnString;
+            try
+                {
+                    controller.CreateQuestion(qDescription,corrAns,incAlt1,incAlt2,incAlt3);
+                    returnString = "Question successfully added to the game.";
+                    return returnString;
+               
+            }
+            catch (SqlException r)
+            {
+
+                throw r;
+            
+        }
+        }
+            
+
         // Return a string that will appear when the last question is answered.
         public string GetEndgameText()
         {
