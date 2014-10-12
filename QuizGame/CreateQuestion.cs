@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace QuizGame
 {
@@ -16,7 +16,6 @@ namespace QuizGame
 
         MainMenu mm = new MainMenu();
         Utility util = new Utility();
-
 
 
         public CreateQuestion()
@@ -56,7 +55,7 @@ namespace QuizGame
             incAlt2 = tb_IncAlt2.Text;
             incAlt3 = tb_IncAlt3.Text;
 
-                util.CreateQuestion(qDescription,corrAns,incAlt1,incAlt2,incAlt3,category,difficulty);
+                util.CreateQuestion(qDescription,corrAns,incAlt1,incAlt2,incAlt3, category, difficulty);
                 this.Hide();
                 this.Close();
                 mm.ShowDialog();
