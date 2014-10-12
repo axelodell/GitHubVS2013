@@ -277,5 +277,44 @@ namespace QuizGame
             + "and show the result for this game (#" + GetGameId() + "), and every other previously completed game.\nThank you for playing!";
             return endgameText;
         }
+
+        public List<string> createCategoryList(string culture, string sport, string entertainment, string geography, string technology, string nature,string history)
+        {
+            List<string> categoryList = new List<string>();
+            if (culture != null)
+            {
+                categoryList.Add(culture);
+                if (sport != null)
+                {
+                    categoryList.Add(sport);
+                    if (entertainment != null)
+                    {
+                        categoryList.Add(entertainment);
+                        if (geography != null)
+                        {
+                            categoryList.Add(geography);
+                            if (technology != null)
+                            {
+                                categoryList.Add(technology);
+                                if (technology != null)
+                                {
+                                    categoryList.Add(technology);
+                                    if (nature != null)
+                                    {
+                                        categoryList.Add(nature);
+                                        if (history != null)
+                                        {
+                                            categoryList.Add(history);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return categoryList;
+        }
     }
+
 }

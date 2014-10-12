@@ -41,6 +41,14 @@
             this.lbl_selectNumberOfQuestions = new System.Windows.Forms.Label();
             this.lbl_CreateNewGame = new System.Windows.Forms.Label();
             this.btn_GoBack = new System.Windows.Forms.Button();
+            this.cb_Sport = new System.Windows.Forms.CheckBox();
+            this.cb_Nature = new System.Windows.Forms.CheckBox();
+            this.cb_Culture = new System.Windows.Forms.CheckBox();
+            this.cb_Technology = new System.Windows.Forms.CheckBox();
+            this.cb_History = new System.Windows.Forms.CheckBox();
+            this.cb_Entertainment = new System.Windows.Forms.CheckBox();
+            this.cb_Geography = new System.Windows.Forms.CheckBox();
+            this.lbl_Category = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.playerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sYSA14DataSet)).BeginInit();
             this.SuspendLayout();
@@ -98,12 +106,11 @@
             this.cb_nrOfQuestions.Name = "cb_nrOfQuestions";
             this.cb_nrOfQuestions.Size = new System.Drawing.Size(292, 21);
             this.cb_nrOfQuestions.TabIndex = 2;
-            this.cb_nrOfQuestions.SelectedIndex = 0;
             // 
             // btn_startNewGame
             // 
             this.btn_startNewGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_startNewGame.Location = new System.Drawing.Point(16, 299);
+            this.btn_startNewGame.Location = new System.Drawing.Point(16, 359);
             this.btn_startNewGame.Name = "btn_startNewGame";
             this.btn_startNewGame.Size = new System.Drawing.Size(292, 45);
             this.btn_startNewGame.TabIndex = 4;
@@ -151,7 +158,7 @@
             // btn_GoBack
             // 
             this.btn_GoBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_GoBack.Location = new System.Drawing.Point(366, 299);
+            this.btn_GoBack.Location = new System.Drawing.Point(366, 359);
             this.btn_GoBack.Name = "btn_GoBack";
             this.btn_GoBack.Size = new System.Drawing.Size(292, 45);
             this.btn_GoBack.TabIndex = 8;
@@ -159,12 +166,102 @@
             this.btn_GoBack.UseVisualStyleBackColor = true;
             this.btn_GoBack.Click += new System.EventHandler(this.btn_GoBack_Click);
             // 
+            // cb_Sport
+            // 
+            this.cb_Sport.AutoSize = true;
+            this.cb_Sport.Location = new System.Drawing.Point(366, 243);
+            this.cb_Sport.Name = "cb_Sport";
+            this.cb_Sport.Size = new System.Drawing.Size(51, 17);
+            this.cb_Sport.TabIndex = 9;
+            this.cb_Sport.Text = "Sport";
+            this.cb_Sport.UseVisualStyleBackColor = true;
+            this.cb_Sport.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // cb_Nature
+            // 
+            this.cb_Nature.AutoSize = true;
+            this.cb_Nature.Location = new System.Drawing.Point(466, 243);
+            this.cb_Nature.Name = "cb_Nature";
+            this.cb_Nature.Size = new System.Drawing.Size(58, 17);
+            this.cb_Nature.TabIndex = 10;
+            this.cb_Nature.Text = "Nature";
+            this.cb_Nature.UseVisualStyleBackColor = true;
+            // 
+            // cb_Culture
+            // 
+            this.cb_Culture.AutoSize = true;
+            this.cb_Culture.Location = new System.Drawing.Point(567, 243);
+            this.cb_Culture.Name = "cb_Culture";
+            this.cb_Culture.Size = new System.Drawing.Size(59, 17);
+            this.cb_Culture.TabIndex = 11;
+            this.cb_Culture.Text = "Culture";
+            this.cb_Culture.UseVisualStyleBackColor = true;
+            // 
+            // cb_Technology
+            // 
+            this.cb_Technology.AutoSize = true;
+            this.cb_Technology.Location = new System.Drawing.Point(366, 275);
+            this.cb_Technology.Name = "cb_Technology";
+            this.cb_Technology.Size = new System.Drawing.Size(82, 17);
+            this.cb_Technology.TabIndex = 12;
+            this.cb_Technology.Text = "Technology";
+            this.cb_Technology.UseVisualStyleBackColor = true;
+            // 
+            // cb_History
+            // 
+            this.cb_History.AutoSize = true;
+            this.cb_History.Location = new System.Drawing.Point(466, 275);
+            this.cb_History.Name = "cb_History";
+            this.cb_History.Size = new System.Drawing.Size(58, 17);
+            this.cb_History.TabIndex = 13;
+            this.cb_History.Text = "History";
+            this.cb_History.UseVisualStyleBackColor = true;
+            // 
+            // cb_Entertainment
+            // 
+            this.cb_Entertainment.AutoSize = true;
+            this.cb_Entertainment.Location = new System.Drawing.Point(567, 275);
+            this.cb_Entertainment.Name = "cb_Entertainment";
+            this.cb_Entertainment.Size = new System.Drawing.Size(91, 17);
+            this.cb_Entertainment.TabIndex = 14;
+            this.cb_Entertainment.Text = "Entertainment";
+            this.cb_Entertainment.UseVisualStyleBackColor = true;
+            // 
+            // cb_Geography
+            // 
+            this.cb_Geography.AutoSize = true;
+            this.cb_Geography.Location = new System.Drawing.Point(366, 309);
+            this.cb_Geography.Name = "cb_Geography";
+            this.cb_Geography.Size = new System.Drawing.Size(78, 17);
+            this.cb_Geography.TabIndex = 15;
+            this.cb_Geography.Text = "Geography";
+            this.cb_Geography.UseVisualStyleBackColor = true;
+            // 
+            // lbl_Category
+            // 
+            this.lbl_Category.AutoSize = true;
+            this.lbl_Category.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Category.Location = new System.Drawing.Point(363, 221);
+            this.lbl_Category.Name = "lbl_Category";
+            this.lbl_Category.Size = new System.Drawing.Size(115, 13);
+            this.lbl_Category.TabIndex = 16;
+            this.lbl_Category.Text = "Select category(s):";
+            this.lbl_Category.Click += new System.EventHandler(this.label1_Click);
+            // 
             // NewGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(725, 425);
+            this.Controls.Add(this.lbl_Category);
+            this.Controls.Add(this.cb_Geography);
+            this.Controls.Add(this.cb_Entertainment);
+            this.Controls.Add(this.cb_History);
+            this.Controls.Add(this.cb_Technology);
+            this.Controls.Add(this.cb_Culture);
+            this.Controls.Add(this.cb_Nature);
+            this.Controls.Add(this.cb_Sport);
             this.Controls.Add(this.btn_GoBack);
             this.Controls.Add(this.lbl_CreateNewGame);
             this.Controls.Add(this.lbl_selectNumberOfQuestions);
@@ -198,5 +295,13 @@
         private System.Windows.Forms.Label lbl_selectNumberOfQuestions;
         private System.Windows.Forms.Label lbl_CreateNewGame;
         private System.Windows.Forms.Button btn_GoBack;
+        private System.Windows.Forms.CheckBox cb_Sport;
+        private System.Windows.Forms.CheckBox cb_Nature;
+        private System.Windows.Forms.CheckBox cb_Culture;
+        private System.Windows.Forms.CheckBox cb_Technology;
+        private System.Windows.Forms.CheckBox cb_History;
+        private System.Windows.Forms.CheckBox cb_Entertainment;
+        private System.Windows.Forms.CheckBox cb_Geography;
+        private System.Windows.Forms.Label lbl_Category;
     }
 }

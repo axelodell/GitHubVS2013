@@ -216,6 +216,8 @@ namespace QuizGame
             }
         }
 
+        //public string sqlStr()
+
         // Creates a List with questionnumbers.
         public List<int> CheckUnique(int gId)
         {
@@ -243,7 +245,7 @@ namespace QuizGame
             }
         }
 
-        // Gets a questiondescrition from database.
+        // Gets a questiondescription from database.
         public string GetRandomQuestion(int qNr)
         {
             try

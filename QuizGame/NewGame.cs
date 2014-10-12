@@ -48,7 +48,16 @@ namespace QuizGame
         private void btn_startNewGame_Click(object sender, EventArgs e)
         {            
             try
-            {                
+            {
+                string culture = cb_Culture.Text;
+                string sport = cb_Sport.Text;
+                string entertainment = cb_Entertainment.Text;
+                string geography = cb_Geography.Text;
+                string history = cb_History.Text;
+                string technology = cb_Technology.Text;
+                string nature = cb_Nature.Text;
+                List<string> categoryList = util.createCategoryList(culture,sport,entertainment,geography,technology,nature,history);
+
                 int questions = cb_nrOfQuestions.SelectedIndex;                            
                 string username = cb_username.Text;
                 util.NewGame(questions, username);
@@ -84,6 +93,17 @@ namespace QuizGame
             {
                 Close();
             }
+        }
+
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
