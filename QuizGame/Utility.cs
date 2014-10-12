@@ -23,8 +23,8 @@ namespace QuizGame
         }
 
         // Create a new game, further instructions below.
-        //public void NewGame(int questions, string username, List<string> categoryList)
-        public void NewGame(int questions, string username)
+        public void NewGame(int questions, string username, List<string> categoryList)
+        //public void NewGame(int questions, string username)
         {
             // Create new game with new gId
             int gId;
@@ -37,8 +37,8 @@ namespace QuizGame
             int qNr = 0;
             for (int i = 0; i <= questions; i++)
             {
-                //qNr = controller.GetRandomNumber(categoryList);
-                qNr = controller.GetRandomNumber();
+                qNr = controller.GetRandomNumber(categoryList);
+                //qNr = controller.GetRandomNumber();
                 if (!rndList.Contains(qNr))
                 {
                     rndList.Add(qNr);
@@ -299,42 +299,43 @@ namespace QuizGame
             + "and show the result for this game (#" + GetGameId() + "), and every other previously completed game.\nThank you for playing!";
             return endgameText;
         }
-       
 
-        //public List<string> CreateCategoryList(string culture, string sport, string entertainment, string geography, string technology, string nature,string history)
-        //{
-        //    List<string> categoryList = new List<string>();
-        //    if (culture != null)
-        //    {
-        //        categoryList.Add(culture);
-        //        if (sport != null)
-        //        {
-        //            categoryList.Add(sport);
-        //            if (entertainment != null)
-        //            {
-        //                categoryList.Add(entertainment);
-        //                if (geography != null)
-        //                {
-        //                    categoryList.Add(geography);
-        //                    if (technology != null)
-        //                    {
-        //                        categoryList.Add(technology);
-        //                        if (technology != null)
-        //                        {
-        //                            categoryList.Add(nature);
-        //                            if (history != null)
-        //                            {
-        //                                categoryList.Add(history);
-        //                            }
-        //                         }
-        //                     }
-        //                 }
-        //             }
-        //         }
-        //    }   
-            
-        //    return categoryList;
-        //}
+
+        public List<string> CreateCategoryList(bool culture, bool sport, bool entertainment, bool geography, bool technology, bool nature, bool history)
+        {
+            List<bool> boolList = new List<bool>();
+            List<string> categoryList = new List<string>();
+            if (culture != false)
+            {
+                categoryList.Add("Culture");
+                if (sport != false)
+                {
+                    categoryList.Add("Sport");
+                    if (entertainment != false)
+                    {
+                        categoryList.Add("Entertainment");
+                        if (geography != false)
+                        {
+                            categoryList.Add("Geography");
+                            if (technology != false)
+                            {
+                                categoryList.Add("Technology");
+                                if (technology != false)
+                                {
+                                    categoryList.Add("Nature");
+                                    if (history != false)
+                                    {
+                                        categoryList.Add("History");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            return categoryList;
+        }
     }
 
 }

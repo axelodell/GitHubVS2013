@@ -29,8 +29,8 @@ namespace QuizGame
         {
             try
             {
-                con = new SqlConnection("Data Source=DESTRUCTOR;Initial Catalog=SYSA14;Integrated Security=True");
-                //con = new SqlConnection("Data Source=AXELS;Initial Catalog=SYSA14;Integrated Security=True");
+                //con = new SqlConnection("Data Source=DESTRUCTOR;Initial Catalog=SYSA14;Integrated Security=True");
+                con = new SqlConnection("Data Source=AXELS;Initial Catalog=SYSA14;Integrated Security=True");
                 con.Open();
                 con.Close();
             }
@@ -210,7 +210,7 @@ namespace QuizGame
         {
             try
             {
-                int qNr = GetNrOfQuestions();
+                int qNr = GetNrOfQuestionsInDatabase();
                 qNr++;
                 sqlStr = "INSERT INTO Question VALUES('" + qNr + "', '" + qDescription + "', '" + qCorrect + "', '" + qIncorrect1 + "', '" + qIncorrect2 + "', '" + qIncorrect3 + "', '" + qCategory + "', '" + qDifficulty + "')";
                 cmd = new SqlCommand(sqlStr, con);
@@ -226,8 +226,8 @@ namespace QuizGame
             }
         }
 
-        //public int GetNrOfQuestions(List<string> categoryList)
-        public int GetNrOfQuestions(){
+        public int GetNrOfQuestions(List<string> categoryList){
+        //public int GetNrOfQuestions(){
 
         
         
@@ -254,15 +254,38 @@ namespace QuizGame
                 throw;
             }
         }
+        
+            public int GetNrOfQuestionsInDatabase(){
+            try
+            {
+                con.Open();
+                sqlStr = "SELECT COUNT(*) FROM Question";
+                cmd = new SqlCommand(sqlStr, con);
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    count = reader.GetInt32(0);
+                }
+                con.Close();
+                reader.Close();
+                return count;
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+        }
 
         // Gets a random number
-        //public int GetRandomNumber(List<string> categoryList)            AXELS BAJS MED KATEGORIER
-        public int GetRandomNumber()
+        public int GetRandomNumber(List<string> categoryList)          //  AXELS BAJS MED KATEGORIER
+        //public int GetRandomNumber()
         {
             try
             {
                 Random random = new Random();
-                int count = GetNrOfQuestions();
+                //int count = GetNrOfQuestions();
+                int count = GetNrOfQuestions(categoryList);
                 int nmbr = random.Next(1, count + 1);
                 return nmbr;
             }
