@@ -29,7 +29,7 @@ namespace QuizGame
         {
             try
             {
-                con = new SqlConnection("Data Source=AXELS;Initial Catalog=SYSA14;Integrated Security=True");
+                con = new SqlConnection("Data Source=DESTRUCTOR;Initial Catalog=SYSA14;Integrated Security=True");
                 con.Open();
                 con.Close();
             }
