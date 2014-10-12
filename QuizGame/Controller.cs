@@ -59,6 +59,10 @@ namespace QuizGame
         //    return dal.CheckUnique(gId);
         //}
 
+        public void CreateQuestion(string qDescription, string qCorrect, string qIncorrect1, string qIncorrect2, string qIncorrect3, string qIncorrect4, string qCategory, string qDifficulty)
+        {
+            dal.CreateQuestion(qDescription,qCorrect,qIncorrect1,qIncorrect2,qIncorrect3,qIncorrect4,qCategory,qDifficulty)
+        }
         public string GetCorrect(int qNr)
         {
             return dal.GetCorrect(qNr);
