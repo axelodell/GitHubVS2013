@@ -164,6 +164,11 @@ namespace QuizGame
             ng.ShowDialog();
 
             
+        }
+
+        private void lbl_qNr_Click(object sender, EventArgs e)
+        {
+
         } 
     }
 }

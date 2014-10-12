@@ -93,6 +93,7 @@
             this.lbl_qNr.Size = new System.Drawing.Size(130, 16);
             this.lbl_qNr.TabIndex = 4;
             this.lbl_qNr.Text = "\"Question number\"";
+            this.lbl_qNr.Click += new System.EventHandler(this.lbl_qNr_Click);
             // 
             // lbl_question
             // 
@@ -109,11 +110,11 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(554, 29);
+            this.button1.Location = new System.Drawing.Point(475, 29);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 35);
+            this.button1.Size = new System.Drawing.Size(199, 103);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Cancel game";
+            this.button1.Text = "Cancel Game";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.AbortGame);
             // 
