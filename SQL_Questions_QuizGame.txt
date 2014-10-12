@@ -1,0 +1,199 @@
+INSERT INTO Question VALUES('41','What is an avocado?','A berry','A fruit','A vegetable','A flower')
+
+INSERT INTO Question VALUES('42','How many spots does a ladybuy usually have?','Seven','Eight','Fourteen','Five')
+
+INSERT INTO Question VALUES('43','In the TV-show Futurama, what is the character Frys first name?','Philip','Jake','Benjamin','Hermes')
+
+INSERT INTO Question VALUES('44','Which year did Michael Jackson pass away?','2009','2008','2010','2011')
+
+INSERT INTO Question VALUES('45','What is the collective noun for a group of crows?','A murder','A flock','A gang','A cloud')
+
+INSERT INTO Question VALUES('46','How many games have been released in the "Call of Duty"-series?','10','6','8','12')
+
+INSERT INTO Question VALUES('47','What is the artist Aviciis real name?','Tim Bergling','Kevin Berg','Karl Bergkvist','Thomas Hansson')
+
+INSERT INTO Question VALUES('48','How many centimeters is an inch?','2,54','3,12','3,56','4,02')
+
+INSERT INTO Question VALUES('49','Which of these animals is not considered one of "the big five"','Tiger','Lion','Elephant','Buffalo')
+
+INSERT INTO Question VALUES('50','Which group release the album "Dirty deeds done dirt cheap" in 1976','AC/DC','Iron Maiden','Rolling Stones','U2')
+
+INSERT INTO Question VALUES('51','From which country is the football player Didier Drogba?','The Ivory Coast','Kenya','Tanzania','Portugal')
+
+INSERT INTO Question VALUES('52','Which animal is SEGASs fast and blue mascot?','Hedgehog','Cheetah','Sparrow','Cat')
+
+INSERT INTO Question VALUES('53','Which actor played Luke Skywalker in Star Wars?','Mark Hamill','James Earl Jones','Harrison Ford','Daniel Day Lewis')
+
+INSERT INTO Question VALUES('54','What is the brand of Homer Simpsons favorite beer?','Duff','Budweiser','Heineken','Tuborg')
+
+INSERT INTO Question VALUES('55','From which city in England did John Lennon come from?','Liverpool','Everton','London','New Castle')
+
+INSERT INTO Question VALUES('56','What is the humanoid race called in StarCraft?','Terran','Zerg','Protoss','Human')
+
+INSERT INTO Question VALUES('57','From which country is Josef Fritzl?','Austria','Germany','Russia','Ukraine')
+
+INSERT INTO Question VALUES('58','Philately is the study of what?','Stamps','Humans','Genetics','Philosophy')
+
+INSERT INTO Question VALUES('59','Skype was in 2011 bought by which company?','Microsoft','Apple','General Electrics','Sony')
+
+INSERT INTO Question VALUES('60','Which sport is commonly associated to the brand "Converse"?','Basketball','Football','Tennis','Squash')
+
+INSERT INTO Question VALUES('1','When did the American Civil War take place?','1861-1865','1854-1859','1879-1884','1834-1840')
+
+INSERT INTO Question VALUES('2','Roughly, how large population does Sweden have?','9½ million','8½ million','10 million','9 million')
+
+INSERT INTO Question VALUES('3','What does the P stand for in the technical word PC?','Personal','Private','Pending','Practical')
+
+INSERT INTO Question VALUES('4','How many legs does a spider have?','8','4','2','6')
+
+INSERT INTO Question VALUES('5','When was Ulrika Eleonora queen of Sweden?','1718-1720','1650-1652','1680-1682','1750-1752')
+
+INSERT INTO Question VALUES('6','What does the S stand for in the technical word SQL?','Structured','Sequential','Specific','Spectacular')
+
+INSERT INTO Question VALUES('7','Who created the C programming language?','Dennis Ritchie','Bill Gates','Steve Jobs','Steve Wozniak')
+
+INSERT INTO Question VALUES('8','What year was Apple Inc. founded?','1976','1982','1973','1980')
+
+INSERT INTO Question VALUES('9','What year was Microsoft founded?','1975','1979','1981','1970')
+
+INSERT INTO Question VALUES('10','Which programming language out of these came first?','C++','Java','C#','Perl')
+
+INSERT INTO Question VALUES('11','Which year was Windows 1.0 released?','1985','1982','1988','1990')
+
+INSERT INTO Question VALUES('12','Spotify has its roots in what country?','Sweden','Finland','Denmark','Norway')
+
+INSERT INTO Question VALUES('13','In which city is the famous Silicon Valley?','San Jose','San Francisco','Los Angeles','Las Vegas')
+
+INSERT INTO Question VALUES('14','The Statue of Liberty has its roots in what country?','France','Spain','England','Italy')
+
+INSERT INTO Question VALUES('15','What year did the first man walk on the moon?','1969','1968','1970','1971')
+
+INSERT INTO Question VALUES('16','What is the nickname of the planet Mars?','The red planet','The green planet','The purple planet','The yellow planet')
+
+INSERT INTO Question VALUES('17','How many bytes is one gigabyte?','1 billion','1 million','1,000','100')
+
+INSERT INTO Question VALUES('18','How many hertz is one megahertz?','1 million','1 billion','1,000','100')
+
+INSERT INTO Question VALUES('19','How many wonders were there in the ancient world?','7','8','9','6')
+
+INSERT INTO Question VALUES('20','When was the Great Pyramid of Giza built?','2560 BC','1560 BC','60 AD','160 AD')
+
+INSERT INTO Question VALUES('21','Which date is Norway´s national date?','17th of May','10th of August','18th of June','17th of April')
+
+INSERT INTO Question VALUES('22','Which two soccer teams are playing against each other in the game called "El Clasico"?','FC Barcelona - Real Madrid','Real Madrid - Real Sociedad','Atletico Madrid - FC Barcelona',' FC Barcelona - Bilbao')
+
+INSERT INTO Question VALUES('23','Where is the famous Sphinx is located?','Egypt','Thailand','Italy','Saudi Arabia')
+
+INSERT INTO Question VALUES('24','The creator of Sherlock Holmes was?', 'Arthur Conan Doyle','Dr. Watson','Ian Fleming','Shakespeare')
+
+INSERT INTO Question VALUES('25','In which sport does the term "Caddie" get used?','Golf','Polo','Bridge','Billiards')
+
+INSERT INTO Question VALUES('26','What is the name of one of the two main protagonists in the television series Breaking Bad?','Jesse Pinkman','Combo','Tuco','Saul Goodman')
+
+INSERT INTO Question VALUES('27','Who founded Facebook?','Mark Zuckerberg','Eduardo Saverin','Dustin Moskovitz','Chris Hughes')
+
+INSERT INTO Question VALUES('28','Which car manufacturer creates the car models "Escort", "Mondeo" and "Focus"','Ford','BMW','Volkswagen','Skoda')
+
+INSERT INTO Question VALUES('29','How many teeth does an adult normally have?','28','30','26','32')
+
+INSERT INTO Question VALUES('30','Which of the following animals was not native to India ?','Horse','Elephant','Rhinoceros','Tiger')
+
+INSERT INTO Question VALUES('31','Whats the name of the biggest lake in Sweden?','Vänern','Vättern','Mälaren','Hjälmaren')
+
+INSERT INTO Question VALUES('32','Which city is the capital of Australia?','Canberra','Sydney','Melbourne','Wellington')
+
+INSERT INTO Question VALUES('33','What is the distance around the world on the equator?','40 000 km','35 000 km','30 000 km','50 000 km')
+
+INSERT INTO Question VALUES('34','Which country do Usain Bolt come from?','Jamaica','Barbados','Cuba','Brazil')
+
+INSERT INTO Question VALUES('35','Who was the president of USA in year 2008?','George W Bush','Barack Obama','Bill Clinton','Abraham Lincoln')
+
+INSERT INTO Question VALUES('36','What is the average length of a man in Sweden 2013?','181,5cm','180cm','178cm','183cm')
+
+INSERT INTO Question VALUES('37','What is the real name of Mohammad Ali?','Cassius Clay','Ronald Wegis','Robert Regon','James Broncho')
+
+INSERT INTO Question VALUES('38','Which city has the highest population?','Tokyo','Bejing','New York','New Dehli')
+
+INSERT INTO Question VALUES('39','Whats Tiger Wood´s first name?','Eldrick','James','Goddard','Flemming')
+
+INSERT INTO Question VALUES('40','Which country is bordered by both the Atlantic and the Indian Oceans?','South Africa','Argentina','Chile','Philippines')
+
+INSERT INTO Question VALUES('61','Which one is a name of a cryptocurrency?','Dogecoin','Paypal','Qnekt','Bool')
+
+INSERT INTO Question VALUES('62','Which one is a name of a robot from Terminator 2?','T-1000','R2D2','Mogwai','B.R.A.I.N')
+
+INSERT INTO Question VALUES('63','What country does HTC come from?','Taiwan','Kina','Hong Kong','Fillipinerna')
+
+INSERT INTO Question VALUES('64','Which one is a real name of a memory storage?','SDXC','PSduo','ImpactFlash','SQbar')
+
+INSERT INTO Question VALUES('65','How many bits are there in an IPV4 address?','32','16','12','64')
+
+INSERT INTO Question VALUES('66','Which one is not an Linux distribution?','LISA','Finnix','Maemo','Pardus')
+
+INSERT INTO Question VALUES('67','How many Mediamarkt stores are there in Sweden?','28','16','10','25')
+
+INSERT INTO Question VALUES('68','How many colors does Iphone5C come in?','5','4','6','3')
+
+INSERT INTO Question VALUES('69','Which name is not a name of an Apple mp3-player?','Deck','Touch','Shuffle','Classic')
+
+INSERT INTO Question VALUES('70','Which producer does not make cameras anymore?','HP','Sony','Samsung','Panasonic')
+
+INSERT INTO Question VALUES('71','What color is Sonic the Hedgehog?','Blue','Black','Brown','Red')
+
+INSERT INTO Question VALUES('72','What year was IKEA invented?','1943','1951','1963','1990')
+
+INSERT INTO Question VALUES('73','Which is the largest continent in area?','Asia','Europe','Africa','Australia')
+
+INSERT INTO Question VALUES('74','Which one is a Vietnamese meal?','Bun bo Hue','Chop sue','Tam yam','Hawtsaos')
+
+INSERT INTO Question VALUES('75','Which one is the worldest tallest building?','Burj Khalifa','Hassan Il Mosque','Gateway Arch','Singapore Flyer')
+
+INSERT INTO Question VALUES('76','What is the company Canton most known for?','Hifi speakers','Furniture','Makeup','Electronic Equipment')
+
+INSERT INTO Question VALUES('77','Which social media does not excist anymore?','Lunarstorm','Skunk','Facebook','Google+')
+
+INSERT INTO Question VALUES('78','Which one have not been an IKEA product name?','Alf','Aina','Alve','Apa')
+
+INSERT INTO Question VALUES('79','Which one is not an gaming mouse producer?','KnC','Func','Razer','Corsair')
+
+INSERT INTO Question VALUES('80','Which spelling is correct?','accommodate','accomodate','acomodate','acommodate')
+
+INSERT INTO Question VALUES('81','How big is Swedens area of land?','449 964 km2','409 164 km2','321 964 km2','241 523 km2')
+
+INSERT INTO Question VALUES('82','What is the capital is Sweden?','Stockholm','Malmö','Kirruna','Dalby')
+
+INSERT INTO Question VALUES('83','What is the name of the union between Denmark, Sweden and Norway which was created  year 1397?','Kalmarunionen','The Axis','The European Union','Swedish Armed Forces')
+
+INSERT INTO Question VALUES('84','What girls name is also the term used to describe a female donkey?','Jenny','Ann','Hanna','Charlott')
+
+INSERT INTO Question VALUES('85','Who was Hercules?','A demigod','A god','A famous figther','A slave')
+
+INSERT INTO Question VALUES('86','Name the fruit which earned its name from the way it hung in bunches like grapes? ','Grapefruit','Grape','Pineapple','Oragne')
+
+INSERT INTO Question VALUES('87','How many centimeters are there in a foot?','30,5cm','42cm','25,3cm','19cm')
+
+INSERT INTO Question VALUES('88','What is the national emblem of Canada?','Maple leaf','Oak leaf','Elder leaf','Maple tree')
+
+INSERT INTO Question VALUES('89','What colur is white ligth?','All colurs','red and blue','no colours','greed, red and yellow')
+
+INSERT INTO Question VALUES('90','What kind of animal is Pingu?','A penguin','A cat','A dog','A lion')
+
+INSERT INTO Question VALUES('91','How many meters are 1km?','1000m','100m','10000m','10m')
+
+INSERT INTO Question VALUES('92','How long is a nautical mile?','1852m','1367m','1102m','1723m')
+
+INSERT INTO Question VALUES('93','How many km/h is a knot?','1,852','2,612','7,123','1,237')
+
+INSERT INTO Question VALUES('94','What is homo sapiens sapiens?','A human','A tree','A sea','A fruit')
+
+INSERT INTO Question VALUES('95 ','What is glas made of?','Sand','Crystals','Iron','Coal')
+
+INSERT INTO Question VALUES('96','What metals are brass made of?','Copper and Zink','Copper and Bronze','Bronze and Zink','Gold and Silver')
+
+INSERT INTO Question VALUES('97','What is the name of the princes in mario?','Peach','Ann','Leia','Silvia')
+
+INSERT INTO Question VALUES('98','Who is the bad guy in Super Mario?','Bowser','Hanibal','Luigi','Warrio')
+
+INSERT INTO Question VALUES('99','What is Pluto?','A Dwarf planet','A planet','A moon','A comet')
+
+INSERT INTO Question VALUES('100','How far is the sun from earth?','149 600 000 km','156 800 000km','213 000 000km','128 000 231')
