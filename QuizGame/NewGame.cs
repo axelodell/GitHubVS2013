@@ -23,7 +23,15 @@ namespace QuizGame
 
         public void NewGame_Load(object sender, EventArgs e)
         {
-            this.playerTableAdapter.Fill(this.sYSA14DataSet.Player);           
+            try
+            {
+                this.playerTableAdapter.Fill(this.sYSA14DataSet.Player);
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }           
         }
 
         private void btn_createNewUser_Click(object sender, EventArgs e)

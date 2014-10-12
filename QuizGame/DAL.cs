@@ -29,7 +29,8 @@ namespace QuizGame
         {
             try
             {
-                con = new SqlConnection("Data Source=DESTRUCTOR;Initial Catalog=SYSA14;Integrated Security=True");
+                //con = new SqlConnection("Data Source=DESTRUCTOR;Initial Catalog=SYSA14;Integrated Security=True");
+                con = new SqlConnection("Data Source=AXELS;Initial Catalog=SYSA14;Integrated Security=True");
                 con.Open();
                 con.Close();
             }
@@ -205,13 +206,13 @@ namespace QuizGame
         }
 
 
-        public void CreateQuestion(string qDescription, string qCorrect, string qIncorrect1, string qIncorrect2, string qIncorrect3, string qIncorrect4, string qCategory, string qDifficulty)
+        public void CreateQuestion(string qDescription, string qCorrect, string qIncorrect1, string qIncorrect2, string qIncorrect3, string qCategory, string qDifficulty)
         {
             try
             {
                 int qNr = GetNrOfQuestions();
                 qNr++;
-                sqlStr = "INSERT INTO Question VALUES('" + qNr + "'" + qDescription + "', '" + qCorrect + "', '" + qIncorrect1 + "', '" + qIncorrect2 + "', '" + qIncorrect3 + "', '" + qIncorrect4 + "', '" + qCategory + "', '" + qDifficulty + "')";
+                sqlStr = "INSERT INTO Question VALUES('" + qNr + "'" + qDescription + "', '" + qCorrect + "', '" + qIncorrect1 + "', '" + qIncorrect2 + "', '" + qIncorrect3 + "', '" + qCategory + "', '" + qDifficulty + "')";
                 cmd = new SqlCommand(sqlStr, con);
                 con.Open();
                 reader = cmd.ExecuteReader();

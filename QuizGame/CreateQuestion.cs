@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ namespace QuizGame
     {
 
         MainMenu mm = new MainMenu();
+        Utility util = new Utility();
 
 
 
@@ -54,7 +56,7 @@ namespace QuizGame
             incAlt2 = tb_IncAlt2.Text;
             incAlt3 = tb_IncAlt3.Text;
 
-                MessageBox.Show(utility.CreateQuestion(qDescription,corrAns,incAlt1,incAlt2,incAlt3));
+                util.CreateQuestion(qDescription,corrAns,incAlt1,incAlt2,incAlt3,category,difficulty);
                 this.Hide();
                 this.Close();
                 mm.ShowDialog();

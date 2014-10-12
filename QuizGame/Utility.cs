@@ -279,6 +279,10 @@ namespace QuizGame
             + "and show the result for this game (#" + GetGameId() + "), and every other previously completed game.\nThank you for playing!";
             return endgameText;
         }
+        public void CreateQuestion(string qDescription, string qCorrect, string qIncorrect1, string qIncorrect2, string qIncorrect3, string qCategory, string qDifficulty)
+        {
+            controller.CreateQuestion(qDescription, qCorrect, qIncorrect1, qIncorrect2, qIncorrect3, qCategory, qDifficulty);
+        }
 
         //public List<string> CreateCategoryList(string culture, string sport, string entertainment, string geography, string technology, string nature,string history)
         //{
