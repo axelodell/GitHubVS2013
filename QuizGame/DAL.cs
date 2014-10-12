@@ -212,7 +212,7 @@ namespace QuizGame
             {
                 int qNr = GetNrOfQuestions();
                 qNr++;
-                sqlStr = "INSERT INTO Question VALUES('" + qNr + "'" + qDescription + "', '" + qCorrect + "', '" + qIncorrect1 + "', '" + qIncorrect2 + "', '" + qIncorrect3 + "', '" + qCategory + "', '" + qDifficulty + "')";
+                sqlStr = "INSERT INTO Question VALUES('" + qNr + "', '" + qDescription + "', '" + qCorrect + "', '" + qIncorrect1 + "', '" + qIncorrect2 + "', '" + qIncorrect3 + "', '" + qCategory + "', '" + qDifficulty + "')";
                 cmd = new SqlCommand(sqlStr, con);
                 con.Open();
                 reader = cmd.ExecuteReader();
