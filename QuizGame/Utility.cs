@@ -273,12 +273,12 @@ namespace QuizGame
         }
 
         //Create a new question.
-        public string CreateQuestion(string qDescription, string corrAns, string incAlt1, string incAlt2, string incAlt3)
+        public string CreateQuestion(string qDescription, string corrAns, string incAlt1, string incAlt2, string incAlt3, string category, string difficulty)
         {
             string returnString;
             try
                 {
-                    controller.CreateQuestion(qDescription,corrAns,incAlt1,incAlt2,incAlt3);
+                    controller.CreateQuestion(qDescription,corrAns,incAlt1,incAlt2,incAlt3,category,difficulty);
                     returnString = "Question successfully added to the game.";
                     return returnString;
                

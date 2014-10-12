@@ -640,9 +640,32 @@ namespace QuizGame
             {
                 throw;
             }
+            }
+
+            public void CreateQuestion(string qDescription, string qCorrect, string qIncorrect1, string qIncorrect2, string qIncorrect3, string qCategory, string qDifficulty)
+        {
+            try
+            {
+                int qNr = GetNrOfQuestions();
+                qNr++;
+                sqlStr = "INSERT INTO Question VALUES('" + qNr + "'" + qDescription + "', '" + qCorrect + "', '" + qIncorrect1 + "', '" + qIncorrect2 + "', '" + qIncorrect3 + "', '" + qCategory + "', '" + qDifficulty + "')";
+                cmd = new SqlCommand(sqlStr, con);
+                con.Open();
+                reader = cmd.ExecuteReader();
+                con.Close();
+                reader.Close();
+
+            }
+            catch (SqlException r)
+            {
+                throw r;
+            }
+        }
+
+
         }
     }
-}
+
 
 
 
