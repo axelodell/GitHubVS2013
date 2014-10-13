@@ -47,11 +47,11 @@ namespace QuizGame
         //    return dal.GetNrOfQuestions();
         //}
 
-        public int GetRandomNumber(List<string> categoryList)
-        //public int GetRandomNumber()
+        //public int GetRandomNumber(List<string> categoryList)
+        public int GetRandomNumber()
         {
-            return dal.GetRandomNumber(categoryList);
-            //return dal.GetRandomNumber();
+            //return dal.GetRandomNumber(categoryList);
+            return dal.GetRandomNumber();
         }
 
         //// Not in use.
