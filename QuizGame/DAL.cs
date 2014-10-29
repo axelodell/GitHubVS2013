@@ -27,9 +27,10 @@ namespace QuizGame
         // Get connection to SQL database.
         public void GetCon()
         {
-            try
+            if (System.Environment.MachineName == "AXELS")
             {
-                //con = new SqlConnection("Data Source=DESTRUCTOR;Initial Catalog=SYSA14;Integrated Security=True");
+                try
+            {
                 con = new SqlConnection("Data Source=AXELS;Initial Catalog=SYSA14;Integrated Security=True");
                 con.Open();
                 con.Close();
@@ -37,7 +38,22 @@ namespace QuizGame
             catch (SqlException)
             {
                 throw;
-            }            
+            }  
+            }else if (System.Environment.MachineName == "DESTRUCTOR")
+	{
+        try
+        {
+            con = new SqlConnection("Data Source=DESTRUCTOR;Initial Catalog=SYSA14;Integrated Security=True");
+            //con = new SqlConnection("Data Source=AXELS;Initial Catalog=SYSA14;Integrated Security=True");
+            con.Open();
+            con.Close();
+        }
+        catch (SqlException)
+        {
+            throw;
+        }    
+	}
+           
         }
 
         // Register new player in the database.

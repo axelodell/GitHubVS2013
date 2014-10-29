@@ -26,10 +26,20 @@ namespace QuizGame.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=AXELS;Initial Catalog=SYSA14;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESTRUCTOR;Initial Catalog=SYSA14;Integrated Security=True")]
         public string SYSA14ConnectionString {
             get {
                 return ((string)(this["SYSA14ConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=AXELS;Initial Catalog=SYSA14;Integrated Security=True")]
+        public string SYSA14ConnectionString2 {
+            get {
+                return ((string)(this["SYSA14ConnectionString2"]));
             }
         }
     }

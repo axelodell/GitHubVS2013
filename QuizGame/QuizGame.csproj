@@ -112,6 +112,7 @@
     <Compile Include="QuestionFrame.Designer.cs">
       <DependentUpon>QuestionFrame.cs</DependentUpon>
     </Compile>
+    <Compile Include="Settings.cs" />
     <Compile Include="SYSA14DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
