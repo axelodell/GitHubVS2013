@@ -204,9 +204,11 @@ namespace QuizGame
             string nature = "Nature";
             string sqlStr = "SELECT COUNT(*) FROM Question WHERE qCategory = ";
             //int count = 0;
-            for (int i = 0; i < categories.Count; i++){
-                
-                if (categories[i] == culture){
+            for (int i = 0; i < categories.Count; i++)
+            {
+
+                if (categories[i] == culture)
+                {
                     sqlStr += "'Culture'";
                     //count++;
                     Console.WriteLine(i);
@@ -216,7 +218,7 @@ namespace QuizGame
                     sqlStr += "OR qCategory = 'Sport'";
                     //count++;
                 }
-               
+
             }
             return sqlStr;
         }
@@ -228,7 +230,7 @@ namespace QuizGame
             {
                 int qNr = GetNrOfQuestionsInDatabase();
                 qNr++;
-                sqlStr = "INSERT INTO Question VALUES('" + qNr + "'" + qDescription + "', '" + qCorrect + "', '" + qIncorrect1 + "', '" + qIncorrect2 + "', '" + qIncorrect3 + "', '" + qCategory + "', '" + qDifficulty + "')";
+                sqlStr = "INSERT INTO Question VALUES('" + qNr + "','" + qDescription + "', '" + qCorrect + "', '" + qIncorrect1 + "', '" + qIncorrect2 + "', '" + qIncorrect3 + "', '" + qCategory + "', '" + qDifficulty + "')";
                 cmd = new SqlCommand(sqlStr, con);
                 con.Open();
                 reader = cmd.ExecuteReader();
@@ -294,14 +296,14 @@ namespace QuizGame
         }
 
         // Gets a random number
-        public int GetRandomNumber(List<string> categoryList)          //  AXELS BAJS MED KATEGORIER
-        //public int GetRandomNumber()
+        //public int GetRandomNumber(List<string> categoryList)          //  AXELS BAJS MED KATEGORIER
+        public int GetRandomNumber()
         {
             try
             {
                 Random random = new Random();
-                //int count = GetNrOfQuestions();
-                int count = GetNrOfQuestions(categoryList);
+                int count = GetNrOfQuestionsInDatabase();
+                //int count = GetNrOfQuestions(categoryList);
                 int nmbr = random.Next(1, count + 1);
                 return nmbr;
             }

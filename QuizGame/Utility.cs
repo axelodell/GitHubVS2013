@@ -37,8 +37,8 @@ namespace QuizGame
             int qNr = 0;
             for (int i = 0; i <= questions; i++)
             {
-                qNr = controller.GetRandomNumber(categoryList);
-                //qNr = controller.GetRandomNumber();
+                //qNr = controller.GetRandomNumber(categoryList);
+                qNr = controller.GetRandomNumber();
                 if (!rndList.Contains(qNr))
                 {
                     rndList.Add(qNr);
